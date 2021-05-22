@@ -16,6 +16,7 @@ nav{
   align-items: center;
   position: fixed;
   width: 100%;
+  z-index: 10;
 }
 
 nav .right-side{
@@ -35,6 +36,10 @@ nav .right-side .nav-link-wrapper a{
   font-size: 18px;
 }
 
+nav .right-side .nav-link-wrapper a:hover{
+  color: #eaeaea;
+}
+
 .container-home{
   display: flex;
   flex-direction: column;
@@ -45,8 +50,8 @@ nav .right-side .nav-link-wrapper a{
 
 .container-home img{
   border-radius: 50%;
-  height: 253px;
-  width: 270px;
+  height: 263px;
+  width: 280px;
 }
 
 .container-home h1{
@@ -107,15 +112,28 @@ hr.split{
   align-items: center;
   background: white;
   padding: 0px 0px 5px 0px;
+  border: 2px solid transparent;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.container-projects .card:hover{
+  border: 2px solid black;
 }
 
 .container-projects .card img{
   width: 100%;
+  transition: 0.7s;
+}
+
+.container-projects .card img:hover{
+  transform: scale(1.1);
 }
 
 .container-projects .card p{
   color: black;
   padding: 10px;
+  text-align: center;
 }
 
 .container-contact{
